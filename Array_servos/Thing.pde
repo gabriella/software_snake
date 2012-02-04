@@ -13,10 +13,17 @@ class Thing
  }
   void drawThing()
   {
-    stroke(255,255,0);
+    
+    rectMode(CENTER);
+    fill(255,0,0,100);
+    rect(xPos-14, yPos-height/2,10,20);
+    rectMode(CORNER);
+    fill(255,255,255,255);
+    stroke(255,255,0,255);
     strokeWeight(2);
-   line(xPos-10, yPos-height/2, xPos+10*cos(changer*2), yPos*sin(changer)/20+height/2);
-ellipse(xPos+10*cos(changer*2) , yPos*sin(changer)/20+height/2,10,10);
+   line(xPos-14, yPos-height/2, xPos+10*cos(changer*4), yPos*sin(changer*2)/20+height/2);
+   noStroke();
+ellipse(xPos+10*cos(changer*4) , yPos*sin(changer*2)/20+height/2,3,4);
 //flchanger=flchanger+0.1;
 changer = changer+0.01;
 }

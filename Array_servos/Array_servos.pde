@@ -3,7 +3,7 @@ Thing [] myThings;
 
 void setup() {
   size(500,500);
-  
+  smooth();
   numThings = width/45;
   println(numThings);
       myThings = new Thing[numThings];
@@ -20,6 +20,6 @@ void draw() {
   {
     myThings[i].drawThing();
   }
- // saveFrame("images/snake####.png");
+ //saveFrame("images/snake####.png");
 }
 
